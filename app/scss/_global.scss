@@ -1,5 +1,5 @@
 .container {
-  max-width: 1200px;
+  max-width: 1320px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -18,8 +18,12 @@ button {
 }
 
 body {
-  // min-width: 320px;
-  min-width: 1920px;
+  font-family: 'Century Gothic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px !important;
+  line-height: 21px !important;
+  color: #444444;
   overflow-x: hidden;
   min-height: 100vh;
 }
@@ -36,4 +40,52 @@ body {
 
 .footer {
   flex: 0 0 auto;
+}
+
+.title {
+  font-family: 'Dela Gothic One', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: #332455;
+}
+
+.s-title {
+  font-family: 'Dela Gothic One';
+  font-size: 17px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #332455;
+}
+
+.line {
+  background: linear-gradient(270deg, #a79cff -2.33%, #cf16c4 98.33%);
+  padding: 17px 0;
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-title {
+    font-family: 'Century Gothic';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+  &-link {
+    color: #fff;
+    padding: 0 56px;
+    & + .line-link {
+      border-left: 1px solid #ffffff;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 }
