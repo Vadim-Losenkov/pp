@@ -281,6 +281,11 @@
     display: flex;
     position: relative;
     padding-left: 265px;
+    &:hover {
+      img.hidden {
+        opacity: 1;
+      }
+    }
   }
   &__item-info {
     padding: 20px 30px;
@@ -298,6 +303,13 @@
       width: 100%;
       height: 100%;
       border-radius: 20px;
+    }
+    img.hidden {
+      position: absolute;
+      top: 0;
+      z-index: 10;
+      opacity: 0;
+      transition: all 0.3s;
     }
   }
   &__item-title {
@@ -346,7 +358,7 @@
   .line-link {
     white-space: nowrap;
     padding: 0 45px;
-    transition: all .3s;
+    transition: all 0.3s;
     &.mixitup-control-active {
       font-weight: 700;
     }
