@@ -10,11 +10,8 @@ a {
 
 button {
   cursor: pointer;
-  background-color: #000;
-  color: #fff;
   border: none;
-  border-radius: 5px;
-  padding: 5px 30px;
+  background: transparent;
 }
 
 body {
@@ -26,7 +23,7 @@ body {
   color: #444444;
   overflow-x: hidden;
   min-height: 100vh;
-  // min-width: 1600px;
+  min-width: 1600px;
 }
 
 .wrapper {
