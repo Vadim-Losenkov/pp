@@ -21,6 +21,7 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
+    color: #444;
     &::before {
       content: '';
       background-image: url('../images/icons/map.svg');
@@ -83,6 +84,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
+    color: #444;
     & + .header__menu-link {
       margin-left: 40px;
     }
@@ -234,6 +236,443 @@
     span {
       display: block;
     }
+  }
+}
+
+.benefits {
+  margin: 100px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 390px;
+    display: flex;
+  }
+  &__item-image {
+    margin-right: 15px;
+    flex: none;
+    width: 80px;
+  }
+}
+
+.type {
+  margin-bottom: 100px;
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__inner {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__item {
+    max-width: 630px;
+    min-height: 225px;
+    background: linear-gradient(270deg, rgba(231, 180, 255, 0.35) 0%, rgba(237, 205, 254, 0) 100%);
+    border: 1px solid rgba(172, 142, 249, 0.5);
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    padding-left: 265px;
+  }
+  &__item-info {
+    padding: 20px 30px;
+  }
+  &__item-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 265px;
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+  }
+  &__item-title {
+    margin-bottom: 35px;
+  }
+  &__item-price {
+    margin-bottom: 20px;
+    font-family: 'Dela Gothic One';
+    font-size: 17px;
+    line-height: 25px;
+    text-transform: lowercase;
+    color: #332455;
+    span {
+      color: #ac8ef9;
+      font-size: 30px;
+      line-height: 150%;
+    }
+  }
+  &__item-button {
+    padding: 10px 35px;
+    background-image: linear-gradient(270deg, #a79cff -2.33%, #cf16c4 98.33%);
+    box-shadow: 0px 0px 10px rgba(182, 88, 255, 0.5);
+    border-radius: 20px;
+    font-family: 'Century Gothic';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+    background-position: center;
+    background-size: 160%;
+    transition: all 0.4s;
+    &:hover {
+      background-position: right;
+    }
+  }
+}
+
+.portfolio {
+  margin-bottom: 100px;
+  .line {
+    margin-bottom: 30px;
+  }
+  .line-links {
+    display: flex;
+  }
+  .line-link {
+    white-space: nowrap;
+    padding: 0 45px;
+    &.active {
+      font-weight: 700;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__slide {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 32px;
+    grid-template-areas:
+      'item-1 item-2 item-4 item-6'
+      'item-1 item-3 item-5 item-6';
+    .item-1 {
+      grid-area: item-1;
+    }
+    .item-2 {
+      grid-area: item-2;
+    }
+    .item-3 {
+      grid-area: item-3;
+    }
+    .item-4 {
+      grid-area: item-4;
+    }
+    .item-5 {
+      grid-area: item-5;
+    }
+    .item-6 {
+      grid-area: item-6;
+      margin-bottom: 91px;
+    }
+  }
+  &__slide-image {
+    position: relative;
+    cursor: pointer;
+    img {
+      height: 100%;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(172, 142, 249, 0.5);
+      border-radius: 20px;
+      opacity: 0;
+      transition: 0.3s;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-image: url('../images/icons/plus.svg');
+      width: 66px;
+      height: 66px;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: 0.3s;
+    }
+    &:hover::before {
+      opacity: 1;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+  &__inner {
+    position: relative;
+  }
+  &__pagination {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 45px;
+    bottom: -9px;
+  }
+  &__pagination-arrow {
+    flex: none;
+    cursor: pointer;
+  }
+  &__pagination-num {
+    margin: 0 30px;
+    font-family: 'Dela Gothic One';
+    font-size: 21px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ac8ef9;
+    margin-bottom: 9px;
+  }
+}
+
+.work {
+  margin-bottom: 100px;
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+  }
+  &__item-image {
+    margin-right: 20px;
+    flex: none;
+  }
+  &__item {
+    background: linear-gradient(270deg, rgba(231, 180, 255, 0.35) 0%, rgba(237, 205, 254, 0) 100%);
+    border: 1px solid rgba(172, 142, 249, 0.5);
+    border-radius: 20px;
+    margin: 0 15px;
+    margin-bottom: 56px;
+    position: relative;
+    display: flex;
+    padding: 25px 30px;
+    max-width: 410px;
+  }
+  &__item-num {
+    position: absolute;
+    left: 0;
+    top: -36px;
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #332455;
+    background-color: #fff;
+  }
+}
+
+.photo {
+  margin-bottom: 100px;
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__text {
+    margin-bottom: 40px;
+  }
+  &__image {
+    margin-bottom: 35px;
+    border-radius: 30px;
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  &__form-title {
+    margin-right: 35px;
+  }
+  &__form-input {
+    outline: none;
+    background: #f7f3ff;
+    border: 1px solid rgba(172, 142, 249, 0.5);
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 350px;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #444;
+    padding: 10px 20px;
+
+    &::placeholder {
+      font-family: 'Century Gothic';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #9c84bb;
+    }
+  }
+  &__form-button {
+    background-image: linear-gradient(270deg, #a79cff -2.33%, #cf16c4 98.33%);
+    background-position: center;
+    background-size: 160%;
+    box-shadow: 0px 0px 10px rgba(182, 88, 255, 0.5);
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+    padding: 13.5px 35px;
+    min-height: 39px;
+    transition: all 0.4s;
+    &:hover {
+      background-position: right;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__items-line {
+    flex: none;
+    margin: 0 45px;
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 60px;
+  }
+  &__item-icon {
+    margin-right: 20px;
+    flex: none;
+  }
+  &__item-title {
+    margin-bottom: 10px;
+  }
+
+  &__items-col:first-child {
+    .photo__item-title,
+    .photo__item-text {
+      text-align: right;
+    }
+    .photo__item-icon {
+      margin-right: 0;
+      margin-left: 20px;
+    }
+    .photo__item-info {
+      order: -1;
+    }
+  }
+}
+
+.contacts {
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__wrapper {
+    background-image: url('../images/global/contacts-map.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+  }
+  &__box {
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    max-width: 410px;
+    margin-left: auto;
+  }
+  &__head {
+    display: flex;
+    margin-bottom: 62px;
+  }
+  &__head-link {
+    color: #ac8ef9;
+    padding: 8px 0;
+    padding-right: 24px;
+    & + .contacts__head-link {
+      padding: 8px 24px;
+      border-left: 1px solid rgba(156, 132, 187, 0.5);
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  &__links {
+    margin-bottom: 66px;
+  }
+  &__link {
+    display: block;
+    color: #444;
+    padding-left: 28px;
+    position: relative;
+    margin-bottom: 15px;
+
+    &::before {
+      content: '';
+      background-image: url('../images/icons/contacts-phone.svg');
+      width: 18px;
+      height: 18px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &.mail::before {
+      background-image: url('../images/icons/contacts-mail.svg');
+    }
+  }
+  &__address {
+    padding-left: 28px;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-image: url('../images/icons/contacts-map.svg');
+      width: 18px;
+      height: 18px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.footer {
+  padding: 30px;
+  background-color: #fff;
+  font-size: 15px;
+  line-height: 18px;
+  color: #9c84bb;
+  &__inner {
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    color: #444;
   }
 }
 
