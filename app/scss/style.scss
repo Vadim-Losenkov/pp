@@ -167,7 +167,7 @@
   }
 }
 .top {
-  margin-top: 104px;
+  margin-top: 95px;
   background-image: url('../images/global/top-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -275,13 +275,80 @@
 
 .benefits {
   margin: 100px 0;
+  &__info {
+    display: none;
+    margin-bottom: 60px;
+  }
+  &__info-title {
+    font-family: 'Dela Gothic One';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #332455;
+    margin-bottom: 15px;
+  }
+  &__info-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__info-input {
+    outline: none;
+    background: linear-gradient(270deg, rgba(231, 180, 255, 0.35) 0%, rgba(237, 205, 254, 0) 100%);
+    border: 1px solid rgba(172, 142, 249, 0.5);
+    box-sizing: border-box;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #444;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+
+    &::placeholder {
+      font-family: 'Century Gothic';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #9c84bb;
+    }
+  }
+  &__info-button {
+    background-image: linear-gradient(270deg, #a79cff -2.33%, #cf16c4 98.33%);
+    background-position: center;
+    background-size: 160%;
+    box-shadow: 0px 0px 10px rgba(182, 88, 255, 0.5);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+    padding: 10px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s;
+    &:hover {
+      background-position: right;
+    }
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
+    margin: 0 -10px;
   }
   &__item {
     max-width: 390px;
     display: flex;
+    margin: 0 10px;
   }
   &__item-image {
     margin-right: 15px;
@@ -505,7 +572,7 @@
   &__box {
     display: flex;
     justify-content: center;
-    margin: 0 -15px;
+    margin: 0 -20px;
     flex-wrap: wrap;
   }
   &__item-image {
@@ -556,7 +623,7 @@
     margin-bottom: 100px;
   }
   &__form-title {
-    margin-right: 35px;
+    margin-right: 25px;
   }
   &__form-input {
     outline: none;
