@@ -1,0 +1,159 @@
+@media (max-width: 1290px) {
+  .line {
+    &-link {
+      padding: 0 19px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+  .top {
+    background-position: -685px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  .header__logo {
+    margin-right: 40px;
+  }
+  .top {
+    &__info {
+      margin-top: 55px;
+    }
+    &__info-form {
+      margin-bottom: 20px;
+    }
+    &__info-box {
+      display: block;
+    }
+  }
+  .line {
+    display: flex;
+    justify-content: center;
+    &-title {
+      display: none;
+    }
+    &-link {
+      padding: 0 30px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .header__info-text {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .top {
+    background-image: url('../images/global/top-bg-768.jpg');
+    background-position: center;
+  }
+  .header__top-mail {
+    margin-right: 20px;
+  }
+  .header__menu-link + .header__menu-link {
+    margin-left: 30px;
+  }
+  .top {
+    padding: 20px 0;
+  }
+  .title {
+    font-size: 28px;
+    line-height: 41px;
+  }
+}
+
+@media (max-width: 745px) {
+  .line {
+    display: none;
+  }
+}
+
+@media (max-width: 685px) {
+  .header__top-address {
+    display: none;
+  }
+  .header__top-contacts {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__info-link {
+    width: 70px;
+    height: 35px;
+    padding: 0;
+    border-radius: 15px;
+    &::before {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    span {
+      display: none;
+    }
+  }
+  .top__title {
+    line-height: 120%;
+    span {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .header__menu {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+    margin-left: 23px;
+    cursor: pointer;
+    span:nth-child(2),
+    span:first-child,
+    span:last-child {
+      transition: all 0.3s;
+    }
+    &.active {
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:first-child {
+        transform: translateY(10px) rotate(225deg);
+      }
+      span:last-child {
+        transform: translateY(-10px) rotate(-225deg);
+        width: 28px;
+      }
+    }
+    span {
+      display: block;
+      width: 28px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #ac8ef9;
+      margin-bottom: 6px;
+
+      &:last-child {
+        margin-bottom: 0;
+        width: 18px;
+        margin-left: auto;
+      }
+    }
+  }
+}
