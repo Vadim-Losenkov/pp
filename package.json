@@ -2,6 +2,7 @@
   "dependencies": {
     "magnific-popup": "^1.1.0",
     "mixitup": "^3.3.1",
+    "slick-slider": "^1.8.2",
     "swiper": "^8.0.7"
   }
 }

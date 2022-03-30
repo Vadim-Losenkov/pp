@@ -443,6 +443,7 @@
 }
 
 .portfolio {
+  padding-bottom: 5px;
   margin-bottom: 100px;
   .line {
     margin-bottom: 30px;
@@ -543,7 +544,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    right: 45px;
+    right: 1%;
     bottom: -9px;
     z-index: 10;
   }
@@ -616,6 +617,9 @@
   &__image {
     margin-bottom: 35px;
     border-radius: 30px;
+    .media-360 {
+      display: none;
+    }
   }
   &__form {
     display: flex;
@@ -631,7 +635,7 @@
     border: 1px solid rgba(172, 142, 249, 0.5);
     box-sizing: border-box;
     border-radius: 30px;
-    width: 350px;
+    width: 345px;
     font-family: 'Century Gothic';
     font-style: normal;
     font-weight: 400;
@@ -673,6 +677,10 @@
   &__items-line {
     flex: none;
     margin: 0 45px;
+    .media-1000,
+    .media-768 {
+      display: none;
+    }
   }
   &__item {
     display: flex;
@@ -702,6 +710,9 @@
 }
 
 .contacts {
+  .mobile-image {
+    display: none;
+  }
   &__title {
     margin-bottom: 40px;
   }
@@ -782,7 +793,7 @@
 }
 
 .footer {
-  padding: 30px;
+  padding: 30px 0;
   background-color: #fff;
   font-size: 15px;
   line-height: 18px;
