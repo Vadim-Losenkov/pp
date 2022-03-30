@@ -212,6 +212,15 @@
       }
     }
   }
+  .portfolio {
+    .line-inner,
+    .line-links {
+      width: 100vw!important;
+    }
+    .line-link {
+      padding: 0;
+    }
+  }
 }
 
 @media (max-width: 950px) {

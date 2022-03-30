@@ -4,6 +4,24 @@ $(function () {
     $(this).toggleClass('active');
     $('.mobile-menu').toggleClass('active');
   });
+  
+  setPortfolioSlider()
+  $(document).on('resize', setPortfolioSlider);
+  $(window).on('orientationchange', setPortfolioSlider);
+  
+  let portfolioNav
+  function setPortfolioSlider() {
+    if (window.innerWidth <= 1000) {
+      $('.portfolio .line-links').addClass('swiper-wrapper')
+      $('.portfolio .line-link').addClass('swiper-slide')
+      portfolioNav = new Swiper('.portfolio .line-inner', {
+        slidesPerView: 3,
+      })
+    } else {
+      $('.portfolio .line-links').removeClass('swiper-wrapper')
+      $('.portfolio .line-link').removeClass('swiper-slide')
+    }
+  }
 });
 
 for (let i = 1; i <= 5; i++) {
