@@ -128,6 +128,13 @@
   }
 
   .portfolio {
+    .line .container {
+      display: flex;
+    }
+    .line-arrow {
+      display: block !important;
+      flex: none;
+    }
     .line-inner {
       justify-content: center;
     }
@@ -213,9 +220,12 @@
     }
   }
   .portfolio {
-    .line-inner,
+    .line-inner {
+      width: calc(95vw + 5px) !important;
+      overflow: hidden;
+    }
     .line-links {
-      width: 100vw!important;
+      width: 90vw !important;
     }
     .line-link {
       padding: 0;

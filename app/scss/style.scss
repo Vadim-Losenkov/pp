@@ -447,6 +447,10 @@
   margin-bottom: 100px;
   .line {
     margin-bottom: 30px;
+    &-arrow {
+      display: none;
+      cursor: pointer;
+    }
   }
   .line-links {
     display: flex;
