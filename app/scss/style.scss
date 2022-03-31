@@ -510,8 +510,13 @@
   &__slide-image {
     position: relative;
     cursor: pointer;
+    border: 1px solid rgba(172, 142, 249, 0.5);
+    border-radius: 20px;
     img {
+      object-fit: cover;
       height: 100%;
+      width: 100%;
+      border-radius: 20px;
     }
     &::before {
       content: '';
