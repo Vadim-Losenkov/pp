@@ -9,6 +9,9 @@ $(function () {
     },
     midClick: true, // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
+
+  $('.close-popup').on('click', () => $('.open-popup').magnificPopup('close'));
+
   $('[data-form="number"]').mask('+7 (999) 999-9999');
   $('.header__burger').on('click', function () {
     $(this).toggleClass('active');
