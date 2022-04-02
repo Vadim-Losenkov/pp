@@ -46,9 +46,9 @@
               <img src="images/global/logo.svg" alt="" />
             </a>
             <nav class="header__menu">
-              <a href="#" class="header__menu-link">Главная</a>
-              <a href="#" class="header__menu-link">Портфолио</a>
-              <a href="#" class="header__menu-link">Цены</a>
+              <a href="#home" class="header__menu-link" data-button="toSecton">Главная</a>
+              <a href="#portfolio" class="header__menu-link" data-button="toSecton">Портфолио</a>
+              <a href="#price" class="header__menu-link" data-button="toSecton">Цены</a>
             </nav>
           </div>
           <div class="header__info">
@@ -71,7 +71,7 @@
       <a href="#" class="mobile-menu-link">Портфолио</a>
       <a href="#" class="mobile-menu-link">Цены</a>
     </div> -->
-    <main class="main">
+    <main class="main" id="home">
       <section class="top">
         <div class="container">
           <div class="top__inner">
@@ -231,7 +231,7 @@
           </div>
         </div>
       </section>
-      <section class="type">
+      <section id="price" class="type">
         <div class="container">
           <h2 class="type__title title">Виды фотосъемки</h2>
           <div class="type__inner">
@@ -341,7 +341,7 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <h2 class="portfolio__title title">
           <div class="container">наше портфолио</div>
         </h2>
@@ -381,42 +381,90 @@
                 <div class="portfolio__slider-box swiper-wrapper">
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__slide-image item-1">
-                      <img src="images/content/portfolio/slide-1-q/1 страница/1.png" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/slide-1-q/1 страница/1.png"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-2">
-                      <img src="images/content/portfolio/slide-1-q/1 страница/2.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/slide-1-q/1 страница/2.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-3">
-                      <img src="images/content/portfolio/slide-1-q/1 страница/3.png" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/slide-1-q/1 страница/3.png"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-4">
-                      <img src="images/content/portfolio/slide-1-q/1 страница/4.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/slide-1-q/1 страница/4.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-5">
-                      <img src="images/content/portfolio/slide-1-q/1 страница/5.png" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/slide-1-q/1 страница/5.png"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-6">
-                      <img src="images/content/portfolio/slide-1-q/1 страница/6.jpg " alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/slide-1-q/1 страница/6.jpg "
+                        alt=""
+                      />
                     </div>
                   </div>
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__slide-image item-1">
-                      <img src="images/content/portfolio/slide-1-q/2 страница/1.png" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/slide-1-q/2 страница/1.png"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-2">
-                      <img src="images/content/portfolio/slide-1-q/2 страница/2.png" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/slide-1-q/2 страница/2.png"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-3">
-                      <img src="images/content/portfolio/slide-1-q/2 страница/3.png" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/slide-1-q/2 страница/3.png"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-4">
-                      <img src="images/content/portfolio/slide-1-q/2 страница/4.png" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/slide-1-q/2 страница/4.png"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-5">
-                      <img src="images/content/portfolio/slide-1-q/2 страница/5.png" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/slide-1-q/2 страница/5.png"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-6">
-                      <img src="images/content/portfolio/slide-1-q/2 страница/6.png " alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/slide-1-q/2 страница/6.png "
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -437,37 +485,43 @@
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__slide-image item-1">
                       <img
-                        src="images/content/portfolio/Одежда на моделях/1 страница/1.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Одежда на моделях/1 страница/1.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-2">
                       <img
-                        src="images/content/portfolio/Одежда на моделях/1 страница/2.png"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Одежда на моделях/1 страница/2.png"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-3">
                       <img
-                        src="images/content/portfolio/Одежда на моделях/1 страница/3.png"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Одежда на моделях/1 страница/3.png"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-4">
                       <img
-                        src="images/content/portfolio/Одежда на моделях/1 страница/4.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Одежда на моделях/1 страница/4.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-5">
                       <img
-                        src="images/content/portfolio/Одежда на моделях/1 страница/5.png"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Одежда на моделях/1 страница/5.png"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-6">
                       <img
-                        src="images/content/portfolio/Одежда на моделях/1 страница/6.png"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Одежда на моделях/1 страница/6.png"
                         alt=""
                       />
                     </div>
@@ -475,37 +529,43 @@
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__slide-image item-1">
                       <img
-                        src="images/content/portfolio/Одежда на моделях/2 страница/1.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Одежда на моделях/2 страница/1.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-2">
                       <img
-                        src="images/content/portfolio/Одежда на моделях/2 страница/2.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Одежда на моделях/2 страница/2.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-3">
                       <img
-                        src="images/content/portfolio/Одежда на моделях/2 страница/3.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Одежда на моделях/2 страница/3.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-4">
                       <img
-                        src="images/content/portfolio/Одежда на моделях/2 страница/4.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Одежда на моделях/2 страница/4.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-5">
                       <img
-                        src="images/content/portfolio/Одежда на моделях/2 страница/5.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Одежда на моделях/2 страница/5.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-6">
                       <img
-                        src="images/content/portfolio/Одежда на моделях/2 страница/6.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Одежда на моделях/2 страница/6.jpg"
                         alt=""
                       />
                     </div>
@@ -556,42 +616,90 @@
                 <div class="portfolio__slider-box swiper-wrapper">
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__slide-image item-1">
-                      <img src="images/content/portfolio/Food съемка/1 страница/1.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Food съемка/1 страница/1.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-2">
-                      <img src="images/content/portfolio/Food съемка/1 страница/2.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Food съемка/1 страница/2.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-3">
-                      <img src="images/content/portfolio/Food съемка/1 страница/3.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Food съемка/1 страница/3.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-4">
-                      <img src="images/content/portfolio/Food съемка/1 страница/4.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Food съемка/1 страница/4.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-5">
-                      <img src="images/content/portfolio/Food съемка/1 страница/5.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Food съемка/1 страница/5.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-6">
-                      <img src="images/content/portfolio/Food съемка/1 страница/6.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Food съемка/1 страница/6.jpg"
+                        alt=""
+                      />
                     </div>
                   </div>
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__slide-image item-1">
-                      <img src="images/content/portfolio/Food съемка/2 страница/1.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Food съемка/2 страница/1.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-2">
-                      <img src="images/content/portfolio/Food съемка/2 страница/2.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Food съемка/2 страница/2.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-3">
-                      <img src="images/content/portfolio/Food съемка/2 страница/3.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Food съемка/2 страница/3.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-4">
-                      <img src="images/content/portfolio/Food съемка/2 страница/4.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Food съемка/2 страница/4.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-5">
-                      <img src="images/content/portfolio/Food съемка/2 страница/5.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Food съемка/2 страница/5.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="portfolio__slide-image item-6">
-                      <img src="images/content/portfolio/Food съемка/2 страница/6.jpg" alt="" />
+                      <img
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Food съемка/2 страница/6.jpg"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -612,37 +720,43 @@
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__slide-image item-1">
                       <img
-                        src="images/content/portfolio/Контентная фотосъемка/1 страница/1.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Контентная фотосъемка/1 страница/1.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-2">
                       <img
-                        src="images/content/portfolio/Контентная фотосъемка/1 страница/2.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Контентная фотосъемка/1 страница/2.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-3">
                       <img
-                        src="images/content/portfolio/Контентная фотосъемка/1 страница/3.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Контентная фотосъемка/1 страница/3.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-4">
                       <img
-                        src="images/content/portfolio/Контентная фотосъемка/1 страница/4.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Контентная фотосъемка/1 страница/4.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-5">
                       <img
-                        src="images/content/portfolio/Контентная фотосъемка/1 страница/5.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Контентная фотосъемка/1 страница/5.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-6">
                       <img
-                        src="images/content/portfolio/Контентная фотосъемка/1 страница/6.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Контентная фотосъемка/1 страница/6.jpg"
                         alt=""
                       />
                     </div>
@@ -650,37 +764,43 @@
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__slide-image item-1">
                       <img
-                        src="images/content/portfolio/Контентная фотосъемка/2 страница/1.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Контентная фотосъемка/2 страница/1.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-2">
                       <img
-                        src="images/content/portfolio/Контентная фотосъемка/2 страница/2.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Контентная фотосъемка/2 страница/2.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-3">
                       <img
-                        src="images/content/portfolio/Контентная фотосъемка/2 страница/3.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Контентная фотосъемка/2 страница/3.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-4">
                       <img
-                        src="images/content/portfolio/Контентная фотосъемка/2 страница/4.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Контентная фотосъемка/2 страница/4.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-5">
                       <img
-                        src="images/content/portfolio/Контентная фотосъемка/2 страница/5.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Контентная фотосъемка/2 страница/5.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-6">
                       <img
-                        src="images/content/portfolio/Контентная фотосъемка/2 страница/6.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/Контентная фотосъемка/2 страница/6.jpg"
                         alt=""
                       />
                     </div>
@@ -703,37 +823,43 @@
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__slide-image item-1">
                       <img
-                        src="images/content/portfolio/съемка с раскладкой/1 страница/1.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/съемка с раскладкой/1 страница/1.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-2">
                       <img
-                        src="images/content/portfolio/съемка с раскладкой/1 страница/2.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/съемка с раскладкой/1 страница/2.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-3">
                       <img
-                        src="images/content/portfolio/съемка с раскладкой/1 страница/3.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/съемка с раскладкой/1 страница/3.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-4">
                       <img
-                        src="images/content/portfolio/съемка с раскладкой/1 страница/4.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/съемка с раскладкой/1 страница/4.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-5">
                       <img
-                        src="images/content/portfolio/съемка с раскладкой/1 страница/5.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/съемка с раскладкой/1 страница/5.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-6">
                       <img
-                        src="images/content/portfolio/съемка с раскладкой/1 страница/6.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/съемка с раскладкой/1 страница/6.jpg"
                         alt=""
                       />
                     </div>
@@ -741,37 +867,43 @@
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__slide-image item-1">
                       <img
-                        src="images/content/portfolio/съемка с раскладкой/2 страница/1.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/съемка с раскладкой/2 страница/1.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-2">
                       <img
-                        src="images/content/portfolio/съемка с раскладкой/2 страница/2.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/съемка с раскладкой/2 страница/2.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-3">
                       <img
-                        src="images/content/portfolio/съемка с раскладкой/2 страница/3.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/съемка с раскладкой/2 страница/3.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-4">
                       <img
-                        src="images/content/portfolio/съемка с раскладкой/2 страница/4.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/съемка с раскладкой/2 страница/4.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-5">
                       <img
-                        src="images/content/portfolio/съемка с раскладкой/2 страница/5.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/съемка с раскладкой/2 страница/5.jpg"
                         alt=""
                       />
                     </div>
                     <div class="portfolio__slide-image item-6">
                       <img
-                        src="images/content/portfolio/съемка с раскладкой/2 страница/6.jpg"
+                        src="images/content/portfolio/loading.svg"
+                        data-src="images/content/portfolio/съемка с раскладкой/2 страница/6.jpg"
                         alt=""
                       />
                     </div>
@@ -1027,7 +1159,9 @@
             data-form="number"
             placeholder="+7 (___) ___-__-__"
           />
-          <a href="#" class="type__item-button">Рассчитать стоимость</a>
+          <a href="#th-popup" data-effect="mfp-zoom-in" class="type__item-button open-popup"
+            >Рассчитать стоимость</a
+          >
         </div>
       </div>
       <div id="type-popup-2" class="type-popup mfp-with-anim mfp-hide">
@@ -1067,7 +1201,9 @@
             data-form="number"
             placeholder="+7 (___) ___-__-__"
           />
-          <a href="#" class="type__item-button">Рассчитать стоимость</a>
+          <a href="#th-popup" data-effect="mfp-zoom-in" class="type__item-button open-popup"
+            >Рассчитать стоимость</a
+          >
         </div>
       </div>
       <div id="type-popup-3" class="type-popup mfp-with-anim mfp-hide">
@@ -1107,7 +1243,9 @@
             data-form="number"
             placeholder="+7 (___) ___-__-__"
           />
-          <a href="#" class="type__item-button">Рассчитать стоимость</a>
+          <a href="#th-popup" data-effect="mfp-zoom-in" class="type__item-button open-popup"
+            >Рассчитать стоимость</a
+          >
         </div>
       </div>
       <div id="type-popup-4" class="type-popup mfp-with-anim mfp-hide">
@@ -1147,7 +1285,9 @@
             data-form="number"
             placeholder="+7 (___) ___-__-__"
           />
-          <a href="#" class="type__item-button">Рассчитать стоимость</a>
+          <a href="#th-popup" data-effect="mfp-zoom-in" class="type__item-button open-popup"
+            >Рассчитать стоимость</a
+          >
         </div>
       </div>
       <div id="type-popup-5" class="type-popup mfp-with-anim mfp-hide">
@@ -1187,7 +1327,9 @@
             data-form="number"
             placeholder="+7 (___) ___-__-__"
           />
-          <a href="#" class="type__item-button">Рассчитать стоимость</a>
+          <a href="#th-popup" data-effect="mfp-zoom-in" class="type__item-button open-popup"
+            >Рассчитать стоимость</a
+          >
         </div>
       </div>
       <div id="type-popup-6" class="type-popup mfp-with-anim mfp-hide">
@@ -1227,9 +1369,18 @@
             data-form="number"
             placeholder="+7 (___) ___-__-__"
           />
-          <a href="#" class="type__item-button">Рассчитать стоимость</a>
+          <a href="#th-popup" data-effect="mfp-zoom-in" class="type__item-button open-popup"
+            >Рассчитать стоимость</a
+          >
         </div>
       </div>
+      <div id="th-popup" class="th-popup mfp-with-anim mfp-hide">
+        <img class="close-popup" src="images/icons/th-popup.svg" alt="" />
+      </div>
+      <div id="photo-popup" class="photo-popup mfp-with-anim mfp-hide">
+        <img src="images/content/portfolio/loading.svg" alt="" />
+      </div>
+      <a href="#photo-popup" href="#th-popup" data-effect="mfp-zoom-in" class="image-popup"></a>
     </div>
 
     <script src="js/jquery.min.js"></script>

@@ -438,6 +438,11 @@
       margin-bottom: 30px;
     }
   }
+  .type-popup {
+    &__input {
+      width: 100%;
+    }
+  }
 }
 @media (max-width: 590px) {
   .header__menu {
@@ -576,6 +581,19 @@
         // width: 100%;
         margin-bottom: 20px;
         height: 290px;
+      }
+    }
+  }
+  .type-popup {
+    &__box {
+      display: block;
+    }
+    &__image {
+      margin-bottom: 20px;
+    }
+    &__title {
+      br {
+        display: none;
       }
     }
   }

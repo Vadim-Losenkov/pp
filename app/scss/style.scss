@@ -479,7 +479,7 @@
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: minmax(100px, 368px) minmax(100px, 368px);
     gap: 30px 32px;
     grid-template-areas:
       'item-1 item-2 item-4 item-6'

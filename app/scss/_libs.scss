@@ -46,6 +46,28 @@
   background-color: rgba(#332455, 0.7);
 }
 
+.th-popup {
+  .mfp-close {
+    display: none !important;
+  }
+  margin: 0 auto;
+  img {
+    margin: 0 auto; 
+  }
+}
+.photo-popup {
+  .mfp-close {
+    display: none !important;
+  }
+  margin: 0 auto;
+  img {
+    margin: 0 auto;
+    max-height: 70vh;
+  }
+}
+.image-popup {
+  display: none;
+}
 .type-popup {
   .mfp-close {
     display: none !important;
